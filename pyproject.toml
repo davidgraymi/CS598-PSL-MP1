@@ -7,7 +7,12 @@ authors = [
     { name = "David Gray", email = "davidgraymi@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.1",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "ucimlrepo>=0.0.7",
+]
 
 [project.scripts]
 cs598-psl-mp1 = "cs598_psl_mp1:main"
@@ -18,5 +23,6 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "ipykernel>=7.3.0",
     "jupyter>=1.1.1",
 ]
